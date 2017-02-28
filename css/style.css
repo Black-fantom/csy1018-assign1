@@ -1,0 +1,48 @@
+ body{
+   background: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+h1{
+  padding-top: 5px;
+  margin: 0;
+}
+ul {
+    padding-top: 9px;
+    padding-left: 0px;
+    margin: 0;
+
+}
+
+ header{
+   text-align: center;
+   background-color:#45629d;
+   width:80%;
+   height: 150px;
+ }
+
+ nav{
+   width:80% ;
+   height: 40px;
+   background-color:skyblue;
+
+
+
+ }
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  padding-bottom:10px;
+  list-style:none;
+}
+
+nav ul li {
+  width: 10%;
+
+
+
+
+
+}
