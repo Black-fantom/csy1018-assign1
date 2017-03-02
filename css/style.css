@@ -1,48 +1,55 @@
- body{
-   background: white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
-h1{
-  padding-top: 5px;
-  margin: 0;
-}
-ul {
-    padding-top: 9px;
-    padding-left: 0px;
-    margin: 0;
-
-}
-
- header{
-   text-align: center;
-   background-color:#45629d;
-   width:80%;
-   height: 150px;
- }
-
- nav{
-   width:80% ;
-   height: 40px;
-   background-color:skyblue;
-
-
-
- }
-nav ul{
+body{
   display: flex;
-  flex-direction: row;
-  justify-content:flex-end;
-  padding-bottom:10px;
-  list-style:none;
+  flex-direction: row; /*display the content in row */
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  width: 10%;
-
-
-
-
-
+.Left_Part{
+  background-color:#131212;
+  width: 25%;
+  height: 1000px;
 }
+
+section{
+  width: 85%;
+}
+ nav{
+   height: 120px;
+   width:78%;
+   background: #131212;
+   position: fixed;
+   color: #948228;
+
+ }
+ ul{
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+    margin:0;
+   justify-content:flex-end ;
+
+
+ }
+ li{
+   width: 80px;
+   height:24.5px;
+   padding:95px 10px 0 0 ;
+
+   text-align: center;
+ }
+ li:hover{
+   background-color:  #3c3e40; /*background color changes when mouse is pointed over the context */
+   padding;90px;
+   color:white; /* text color changes when mouse is pointed over the text */
+   font-size:18px;
+ }
+ main{
+   background: linear-gradient(to bottom right,#191919,#272620); /* create diagonal gradient from top left to bottom right */
+   height: 600px;
+ }
+ footer{
+   background-color:  #191919;
+   height:120px;
+
+ }
