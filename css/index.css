@@ -1,0 +1,86 @@
+@import "style.css";
+@media screen and (max-width:769px) {
+  body{
+    flex-direction: column;
+  }
+  .left_part{
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    height: 100px;
+    position: fixed;
+  }
+  .social , .image{
+    display: none;
+  }
+  #menu{
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    display: none;
+
+  }
+  #menu:target{
+    width: 250px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .back{
+    display: flex;
+    padding-left: 200px;
+    position: fixed;
+  }
+  .menu-icon{
+    width: 50px;
+    display: flex;
+    position: fixed;
+
+  }
+  .menu-icon img{
+    width: 40px;
+    height: 40px;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0px 0px 3px;
+  }
+  li{
+    padding:25px  10px 0 0 ;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    flex-wrap: nowrap;
+    transition: width 1s;
+
+
+
+
+  }
+
+  li:hover{
+    width:237px;
+    padding-top:25px;
+    font-size: 16px;
+
+  }
+  .nav-text{
+    background: #111010;
+
+  }
+  section{
+    width: 100%;
+    height: 500px;
+  }
+
+  .profile h3{
+    padding-top: 75px;
+  }
+  main{
+    width: 100%;
+    height: 500px;
+  }
+
+}

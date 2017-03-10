@@ -3,53 +3,180 @@ body{
   flex-direction: row; /*display the content in row */
   margin: 0;
   padding: 0;
+
 }
 
-.Left_Part{
-  background-color:#131212;
+.left_part{
+  background: linear-gradient(to bottom, #131212 ,#040404); /*Create gradient effect of two color from top to bottom */
   width: 25%;
-  height: 1000px;
+  height: 720px;
+  display: flex;
+  flex-direction: column; /* Display content in row*/
+  padding: 0;
+  margin: 0;
+
+
 }
+
+.profile{
+  width: 100%;
+  height: 120px;
+  color: white;
+  background-image: url(../images/Logo.png); /* Background image will be Logo.png */
+  background-position: top center; /* Postion fo background image will be top center */
+  background-repeat: no-repeat; /* There will no repeatition of same image */
+  background-size: 120px 80px;
+  font-family: 'Black Ops One', cursive; /* Font type will be Black Ops One */
+  animation-name: logo; /* Animation name must be declared while using */
+  animation-duration: 5s; /*Animation effect will last upto 5 second */
+  animation-delay: 2s; /* Animation will start after 2 second after loading the page */
+  animation-iteration-count: infinite; /* Animation will repeat it shelf for infinite time */
+ }
+
+ @keyframes logo { /* It is a command which create animation in animation-name logo*/
+  0%{ background-image: url(../images/Logo.png); }
+  25%{ background-image: url(../images/Logo4.png);} /* After completing 25% of animation-duration time background will change*/
+  50%{ background-image: url(../images/Logo.png); } /* After completing 50% of animation-duration time background will change*/
+  75%{ background-image: url(../images/Logo4.png);} /* After completing 75% of animation-duration time background will change*/
+  100%{ background-image: url(../images/Logo.png); } /* After completing 100% of animation-duration time background will change*/
+ }
+
+ .profile h3{
+   text-align: center; /* Context will start from the center */
+   padding-top:90px; /* Context will appear 90px below from the top */
+   margin: 0px;
+ }
+
+ .image{
+   padding: 10px 0px 0px 10px;  /* Div content will appear 90px below from the top */
+ }
+
+
+ #circular-img{
+   height: 300px;
+   width:95%;
+   box-shadow:1px 4px 10px black;
+   border-radius: 50% ; /* It create circular border */
+   transition: width 1s, height 1s, border 0.5s;
+ }
+
+ #circular-img:hover{
+   border:5px solid #24231e; /* It create solid 6px border of #24231e color */
+   width: 90%;
+ }
+
+ .image p{ /* It will create changes only p tag which inside of image div */
+   font-size: 30px; /* Font size will be 30px */
+   font-style: italic; /* Text will appear in italic style */
+   font-family: 'Black Ops One', cursive;
+   color: antiquewhite; /* Color of font will be antiquewhite */
+   padding:7px 0px 0px 7px;; /* Content will start 7px from top and left side */
+   margin: 0;
+ }
+
+
+.social{
+  background:#0e0e0e;
+  margin-top:120px;
+  height:120px;
+
+}
+.social img{
+ width:50px;
+ height:50px;
+ padding: 2px;
+}
+.social p{
+ font-size: 20px;
+ color:antiquewhite;
+ padding: 0;
+ margin:1px 0px 0px 10px;
+}
+
+
 
 section{
   width: 85%;
 }
+
+ .menu-icon img{
+   width: 0px;
+
+ }
  nav{
    height: 120px;
    width:78%;
-   background: #131212;
+   background: rgb(17, 16, 16);
    position: fixed;
+   color: yellow;
+   box-shadow: 5px 3px 12px black;
+   //background: linear-gradient(to top, #131212 ,#040404); /*Create gradient effect of two color from bottom to top */
+
+ }
+ .back{
+   display: none;
+ }
+
+ a{
+   text-decoration: none; /* Default color and decration of hyperlink will removed */
    color: #948228;
-
  }
+
+ a:visited a:active{
+    color: red;
+  }
+
  ul{
-   display: flex;
-   flex-direction: row;
-   list-style: none;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
     margin:0;
-   justify-content:flex-end ;
+    justify-content:flex-end ; /* Flex itme will start from the end of that div */
+    color: #948228;
 
 
- }
+  }
  li{
+   display: flex;
+   flex-direction: column;
    width: 80px;
-   height:24.5px;
-   padding:95px 10px 0 0 ;
-
+   height:34px;
+   padding:85px 10px 0 0 ; /* It give padding from top, right. bottom and left side respectively */
    text-align: center;
+   overflow: hidden;
+   transition: padding 1s, linear-gradient 2s;
+
+
+
  }
- li:hover{
-   background-color:  #3c3e40; /*background color changes when mouse is pointed over the context */
-   padding;90px;
-   color:white; /* text color changes when mouse is pointed over the text */
-   font-size:18px;
+
+  li:hover{
+   background: linear-gradient(to top,rgba(45, 39, 5, 0.58),rgba(49, 43, 4, 0.14)); /*background color changes when mouse is pointed over the context */
+   font-size: 18px;
+   padding:65px 10px 0 0 ;
+   overflow: visible;
+
+
  }
+
+ nav img  {
+   width: 30px;
+   height: 30px;
+ }
+ .nav-text{
+   margin: 0px;
+   width: 90px;
+   background: rgba(187, 171, 20, 0.24);
+ }
+
  main{
-   background: linear-gradient(to bottom right,#191919,#272620); /* create diagonal gradient from top left to bottom right */
+   background: linear-gradient(to bottom right,#131212,#272620); /* create diagonal gradient from top left to bottom right */
    height: 600px;
+
  }
+
  footer{
-   background-color:  #191919;
+   background-color: #0a0909;
    height:120px;
 
  }
