@@ -3,7 +3,7 @@
 .responsive{
   display: none;
 }
-@media (max-width:769px) {
+@media only screen (max-width:769px) {
   main{
 
   }
