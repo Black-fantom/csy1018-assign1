@@ -11,7 +11,8 @@ body{
   width: 25%;
   height: 720px;
   display: flex;
-  flex-direction: column; /* Display content in row*/
+  flex-direction: column; /* Display content in column*/
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 
@@ -77,7 +78,7 @@ body{
 
 .social{
   background:#0e0e0e;
-  margin-top:120px;
+  margin-top:40px;
   height:120px;
 
 }
@@ -110,7 +111,7 @@ section{
    position: fixed;
    color: yellow;
    box-shadow: 5px 3px 12px black;
-   //background: linear-gradient(to top, #131212 ,#040404); /*Create gradient effect of two color from bottom to top */
+
 
  }
  .back{
@@ -123,7 +124,7 @@ section{
  }
 
  a:visited a:active{
-    color: red;
+    background: red;
   }
 
  ul{
@@ -169,11 +170,16 @@ section{
    background: rgba(187, 171, 20, 0.24);
  }
 
+ .menu-att{
+   display: none;
+ }
+
  main{
    background: linear-gradient(to bottom right,#131212,#272620); /* create diagonal gradient from top left to bottom right */
    height: 600px;
 
  }
+
 
  footer{
    background-color: #0a0909;

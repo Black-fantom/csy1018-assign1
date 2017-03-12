@@ -1,0 +1,105 @@
+
+@media screen and (max-width:769px) {
+  body{
+    flex-direction: column;
+  }
+
+  .left_part{
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    height: 80px;
+    position: fixed;
+  }
+  .social , .image{
+    display: none;
+  }
+  #menu{
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    display: none;
+
+  }
+  #menu:target{
+    width: 250px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .back{
+    display: flex;
+    padding-left: 200px;
+    position: fixed;
+  }
+  .menu-icon{
+    width: 50px;
+    display: flex;
+    position: fixed;
+
+  }
+  .menu-icon img{
+    width: 40px;
+    height: 40px;
+  }
+  .menu-att{
+    display: flex;
+  }
+  h4{
+    margin:6px 0px 0px 0px;
+    color:white;
+  }
+  hr{
+    width:99%;
+    margin-top:10px;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+  }
+  li{
+    padding:25px  10px 0 0 ;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    flex-wrap: nowrap;
+    transition: width 1s;
+
+
+
+
+  }
+
+  li:hover{
+    width:237px;
+    padding-top:25px;
+    font-size: 16px;
+
+  }
+  .nav-text{
+    background: #111010;
+
+  }
+  section{
+    width: 100%;
+    height: 500px;
+  }
+  .profile{
+   height:80px;
+   background-size:70px 50px;
+ }
+  .profile h3{
+    padding-top: 55px;
+    text-align:center;
+    padding-top: 55px;
+
+  }
+  main{
+    margin-top:80px;
+    width: 100%;
+    height: 500px;
+  }
+
+}
