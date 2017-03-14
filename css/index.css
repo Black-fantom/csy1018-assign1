@@ -20,7 +20,7 @@
 }
 .personal-item{
   column-count: 2; /* It create 2 column in div */
-  margin: 6% 0 0 0;
+  margin: 5% 0 0 0;
   width:65%;
 
 
@@ -30,7 +30,7 @@
   margin:1px 0px 0px 0px;
   background:rgba(19, 16, 16, 0.5);
   height:30px;
-  transition: background 1s;
+  transition: background 2s;
 }
 .p-item:hover{
   background: black;
@@ -77,27 +77,43 @@ main{
     border-radius: 50% ; /* It create circular border */
     //transition: width 1s, height 1s, border 0.5s;
   }
-  .copy-right{
-    margin-top: 1%;
-  }
-  footer{
-    height: 120px;
 
-  }
+
 }
 
 
 @media (max-width:425px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+  .main-text{
+    font-size: 18px;
+  }
   .responsive{
     display: flex;
-    margin: 10px 0px 0px 100px;
-    width:50%;
+    width:60%;
   }
   #responsive-img{
-    height: 250px;
+    height: 256px;
     width:100%;
     box-shadow:1px 4px 10px black;
-    border-radius: 30% ; /* It create circular border */
+    border-radius: 20% ; /* It create circular border */
+  }
+  .text-part{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 2%;
+
+  }
+  .personal-item{
+    column-count: 1;
+    width: 100%;
+    margin-top: 23%;
+    text-align: center;
   }
 
  }
