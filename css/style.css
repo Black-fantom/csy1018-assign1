@@ -9,7 +9,7 @@ body{
 .left_part{
   background: linear-gradient(to bottom, #131212 ,#040404); /*Create gradient effect of two color from top to bottom */
   width: 25%;
-  height: 720px;
+  height: 757px;
   display: flex;
   flex-direction: column; /* Display content in column*/
   justify-content: space-between;
@@ -74,27 +74,10 @@ body{
    padding:7px 0px 0px 7px;; /* Content will start 7px from top and left side */
    margin: 0;
  }
-
-
-.social{
-  background:#0e0e0e;
-  margin-top:40px;
-  height:120px;
-
-}
-.social img{
- width:50px;
- height:50px;
- padding: 2px;
-}
-.social p{
- font-size: 20px;
- color:antiquewhite;
- padding: 0;
- margin:1px 0px 0px 10px;
-}
-
-
+ .signature{
+   height: 151px;
+   background: black;
+ }
 
 section{
   width: 85%;
@@ -176,13 +159,106 @@ section{
 
  main{
    background: linear-gradient(to bottom right,#131212,#272620); /* create diagonal gradient from top left to bottom right */
-   height: 600px;
+   height: 480px;
+   margin-top: 120px;
 
  }
 
 
  footer{
    background-color: #0a0909;
-   height:120px;
+   //height:120px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 5px;
+   box-shadow: -1px -7px 7px 0px;
 
+
+ }
+ .git-link{
+   width:30%;
+   text-align:center;
+   padding-top: 3px;
+   margin-top: 2px;
+   height:25px;
+   animation-name: link-animation;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   border-radius:5px;
+   border-top: 2px inset #888e2a;
+   border-bottom: 2px inset #373a11;
+   border-right: 2px inset black;
+   border-left: 2px inset black;
+
+
+ }
+ @keyframes link-animation {
+   0%{
+     border-top: 2px inset #888e2a;
+     border-right: 2px inset black;
+     border-bottom: 2px inset #373a11;
+     border-left: 2px inset black;
+   }
+   25%{
+     border-top: 2px inset black;
+     border-right: 2px inset #888e2a ;
+     border-bottom: 2px inset black;
+     border-left: 2px inset #373a11;
+   }
+   50%{
+     border-top: 2px inset #373a11;
+     border-right: 2px inset black;
+     border-bottom: 2px inset #888e2a;
+     border-left: 2px inset black;
+   }
+   75%{
+     border-top: 2px inset black;
+     border-right: 2px inset #373a11;
+     border-bottom: 2px inset black;
+     border-left: 2px inset #888e2a;
+   }
+   100%{
+     border-top: 2px inset #888e2a;
+     border-right: 2px inset black;
+     border-bottom: 2px inset #373a11;
+     border-left: 2px inset black;
+   }
+
+ }
+ .git-link:hover{
+   background: linear-gradient(to right,#060606,rgba(37, 37, 10, 0.37));
+ }
+ .f-text{
+   padding:0px;
+   margin: 0px;
+   color: #948228;
+
+ }
+ .f-text:hover{
+   background: linear-gradient(to right,#060606,rgba(37, 37, 10, 0.37));
+
+ }
+ .contact{
+   font-size: 20px;
+
+ }
+ .fotter-text{
+
+ }
+ .social{
+   //background:#0e0e0e;
+   margin-top:5px;
+   display: flex;
+   justify-content: center;
+
+
+ }
+ .social img{
+  width:40px;
+  height:40px;
+  padding:2px;
+ }
+ .copy-right{
+   color: whitesmoke;
  }

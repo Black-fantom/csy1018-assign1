@@ -1,25 +1,103 @@
 @import "style.css";
 @import "tab.css";
+@import "mobile.css";
 .responsive{
   display: none;
 }
-@media only screen (max-width:769px) {
-  main{
+.welcome-text{
+  text-align: justify;
+  height: 90px;
+  font-size: 20px;
+  font-style: italic;
+}
+.welcome-text h3{
+  margin: 9px 0px 4px 0px;
+  font-size: 30px;
+  font-family: 'Black Ops One', cursive; /* Font type will be Black Ops One */
+}
+.main-text{
+  margin:0px;
+}
+.personal-item{
+  column-count: 2; /* It create 2 column in div */
+  margin: 6% 0 0 0;
+  width:65%;
 
+
+}
+.p-item{
+  padding: 9px 0px 0px 1px;
+  margin:1px 0px 0px 0px;
+  background:rgba(19, 16, 16, 0.5);
+  height:30px;
+  transition: background 1s;
+}
+.p-item:hover{
+  background: black;
+}
+.p-item img{
+  height:11px;
+  width: 11px;
+  padding: 1px;
+}
+main{
+  padding: 1px 9px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  color:#a9a92f;
+
+}
+@media (max-width:768px) {
+  main{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px;
+  }
+  .text-part{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 14px;
+
+  }
+  .personal-item{
+    width: 65%;
+    margin-top: 7%;
   }
   .responsive{
     display: flex;
-    padding: 10px 0px 0px 10px;
-    width:30%;
+    padding: 2% 1% 0px 1%;
+    width:52%;
+
   }
   #responsive-img{
     height: 250px;
     width:100%;
     box-shadow:1px 4px 10px black;
     border-radius: 50% ; /* It create circular border */
-    transition: width 1s, height 1s, border 0.5s;
-
+    //transition: width 1s, height 1s, border 0.5s;
+  }
+  .copy-right{
+    margin-top: 1%;
+  }
+  footer{
+    height: 120px;
 
   }
-
 }
+
+
+@media (max-width:425px) {
+  .responsive{
+    display: flex;
+    margin: 10px 0px 0px 100px;
+    width:50%;
+  }
+  #responsive-img{
+    height: 250px;
+    width:100%;
+    box-shadow:1px 4px 10px black;
+    border-radius: 30% ; /* It create circular border */
+  }
+
+ }

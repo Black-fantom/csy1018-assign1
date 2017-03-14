@@ -1,5 +1,4 @@
-/* This css only comes into action if the website is open in a screen of width less than 729px */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:425px){
   body{
     flex-direction: column;
   }
@@ -8,8 +7,20 @@
     flex-direction: row;
     width: 100%;
     justify-content: flex-start;
-    height: 80px;
+    height: 60px;
     position: fixed;
+  }
+
+  .profile{
+   height:80px;
+   background-size:60px 40px;
+ }
+  .profile h3{
+    padding-top: 40px;
+    text-align:center;
+    font-size: 16px;
+
+
   }
   .social , .image{
     display: none;
@@ -19,13 +30,15 @@
     height: 0px;
     position: fixed;
     display: none;
+    transition: width 1s;
 
   }
   #menu:target{
     width: 250px;
-    height: 620px;
+    height: 720px;
     display: flex;
     flex-direction: column;
+    opacity: 0.95;
 
   }
   .back{
@@ -86,23 +99,12 @@
     width: 100%;
     height: 500px;
   }
-  .profile{
-   height:80px;
-   background-size:70px 50px;
- }
-  .profile h3{
-    padding-top: 55px;
-    text-align:center;
-    padding-top: 55px;
 
-  }
   main{
-    margin-top:80px;
+    margin-top:60px;
     width: 100%;
     height: 500px;
-    padding: 0px;
   }
-  footer{
-    width: 100%;
-    box-shadow: 3px -5px 8px 0px black;
+
+
 }
