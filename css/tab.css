@@ -30,7 +30,11 @@
     height: 620px;
     display: flex;
     flex-direction: column;
+    opacity: 0.95;
 
+  }
+  #menu a{
+    display: flex;
   }
   .back{
     display: flex;
@@ -84,6 +88,9 @@
   }
   .nav-text{
     background: #111010;
+    margin: 9% 0 0 10px;
+    width: auto;
+    font-size: 18px;
 
   }
   section{

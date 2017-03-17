@@ -9,7 +9,7 @@ body{
 .left_part{
   background: linear-gradient(to bottom, #131212 ,#040404); /*Create gradient effect of two color from top to bottom */
   width: 25%;
-  height: 757px;
+  //height: 757px;
   display: flex;
   flex-direction: column; /* Display content in column*/
   justify-content: space-between;
@@ -44,13 +44,15 @@ body{
 
  .profile h3{
    text-align: center; /* Context will start from the center */
-   padding-top:83px; /* Context will appear 90px below from the top */
+   padding-top:85px; /* Context will appear 90px below from the top */
    margin: 0px;
  }
 
  .image{
    padding: 0px 0px 0px 10px;  /* Div content will appear 10px side from the left */
    margin-top: -5%;
+   background-attachment: fixed;
+
  }
 
 
@@ -95,6 +97,7 @@ section{
    position: fixed;
    color: yellow;
    box-shadow: 5px 3px 12px black;
+   z-index: 10;
 
 
  }
