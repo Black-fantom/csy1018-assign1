@@ -1,3 +1,113 @@
 @import "style.css";
 @import "tab.css";
 @import "mobile.css";
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.contactFrm{
+  //background: linear-gradient(to bottom right,black,blue);
+  width: 95%;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.fname{
+  width:43.26%;
+  height: 30px;
+  padding:1%;
+}
+
+.lname{
+  width:43.26%;
+  height: 30px;
+  padding:1%;
+}
+.flName{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+
+.E_ph{
+  width:97.3%;
+  height: 30px;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+input[type=date]{
+  margin-top: 1%;
+}
+
+.label{
+//  background: blue ;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.Lcontent{
+  //background: green;
+  width: 77%;
+  padding-left:2%;
+
+
+}
+
+input[type=checkbox]{
+  margin-left: 1%;
+}
+
+textarea{
+  margin-top: 1%;
+  resize: none;
+  padding: 1%;
+  background: #a8a8cc ;
+}
+
+input[type=submit], input[type=reset]{
+  width:20%;
+  cursor: pointer;
+}
+input{
+  background: #a8a8cc ;
+}
+
+legend{
+  background: red;
+
+}
+
+/*input[type=s]*/
+
+@media (max-width:768px) {
+  .flName{
+    flex-direction: column;
+
+  }
+  .fname,.lname{
+    width:97%;
+    margin-top: 1%;
+  }
+
+  textarea{
+    width: 97%;
+  }
+
+}
+
+@media (max-width:425px) {
+  .label{
+    flex-direction: column;
+  }
+
+  .Lcontent{
+    width: 98%;
+  }
+
+}
