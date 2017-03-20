@@ -1,3 +1,104 @@
 @import "style.css";
 @import "tab.css";
 @import "mobile.css";
+
+main{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+main h2{
+  width: 100%;
+  margin: 2% 0 1% 2%;
+  padding: 0px;
+  font-size: 26px;
+  color: #948228;
+}
+.cv{
+  background: #111010;
+  width: 45%;
+  height: 200px;
+  margin:0% 2% 3% 2%;
+  color: rgb(134, 120, 25);
+  box-shadow: 7px 8px 20px black;
+  border-radius: 4%;
+
+}
+
+.cv_content ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv_content ul li{
+  height: auto;
+}
+
+.cv_title{
+  border-bottom:3px solid black;
+  height: 32px;
+  transition: background 1s;
+}
+
+.cv_title:hover{
+  background: black;
+}
+
+.cv_title h3{
+  padding:1% 0 0 4%;
+  margin: 0px;
+}
+
+@media (max-width:768px) {
+  main{
+
+  }
+  h2{
+    font-size: 22px;
+  }
+
+  .cv{
+    height: auto;
+  }
+  .cv_content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+  }
+
+  .cv_content ul li{
+    height: auto;
+  }
+
+}
+
+@media (max-width:425px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    width: 100%;
+  }
+
+  .cv{
+    width: auto;
+    margin: 0% 3% 4% 3%;
+    font-size: 16px;
+
+
+  }
+  .cv_content{
+    font-size: 16px;
+  }
+
+  .cv_content li{
+    padding: 2px;
+  }
+
+}

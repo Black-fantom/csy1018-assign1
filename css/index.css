@@ -1,4 +1,4 @@
-@import "style.css";
+@import "style.css"; /* It improt all function of style.css */
 @import "tab.css";
 @import "mobile.css";
 .responsive{
