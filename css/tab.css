@@ -9,7 +9,7 @@
     width: 100%;
     justify-content: flex-start;
     height: 80px;
-    position: fixed;
+    position: absolute;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.68);
   }
  .image{
@@ -62,7 +62,7 @@
     width:99%;
     margin-top:10px;
   }
-  ul{
+  #menu ul{
     display: flex;
     flex-direction: column;
     padding-left: 3px;

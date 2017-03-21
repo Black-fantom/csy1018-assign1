@@ -10,6 +10,9 @@ main{
   justify-content: center;
 
 }
+.image{
+  margin-top: -200px;
+}
 
 main h2{
   width: 100%;
@@ -81,7 +84,7 @@ main h2{
 @media (max-width:425px) {
   main{
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     padding: 0%;
     width: 100%;
   }
