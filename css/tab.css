@@ -1,19 +1,23 @@
 /* This css only comes into action if the website is open in a screen of width less than 729px */
 @media only screen and (max-width:768px) {
   body{
-    flex-direction: column;
+    flex-direction: column; /* flex item is display in column */
   }
 
   .left_part{
-    flex-direction: row;
+    flex-direction: column; /* flex item is display in column */
     width: 100%;
-    justify-content: flex-start;
+    justify-content: flex-start; /* flex item will position from the begining of left_part div */
     height: 80px;
-    position: absolute;
+    position: absolute; /* position will not chage respect to other */
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.68);
   }
+  .signature{
+    display: none; /* it will not display signature div in browser */
+  }
+
  .image{
-    display: none;
+    display: none; /* it will not display signature div in browser */
   }
   .social{
     margin-top:2%;
@@ -21,7 +25,7 @@
   #menu{
     width: 0px;
     height: 0px;
-    position: fixed;
+    position: fixed; /* its position will not changed */
     display: none;
 
   }
@@ -29,8 +33,8 @@
     width: 250px;
     height: 620px;
     display: flex;
-    flex-direction: column;
-    opacity: 0.95;
+    flex-direction: column; /* flex item will display in column */
+    opacity: 0.95; /* Transparency will 0.95 */
 
   }
   #menu a{
@@ -39,13 +43,12 @@
   .back{
     display: flex;
     padding-left: 200px;
-    position: fixed;
+    position: fixed; /* postion will not changed */
   }
   .menu-icon{
     width: 50px;
     display: flex;
     position: fixed;
-
   }
   .menu-icon img{
     width: 40px;
@@ -56,7 +59,7 @@
   }
   h4{
     margin:6px 0px 0px 0px;
-    color:white;
+    color:white; /* color of text will be white */
   }
   hr{
     width:99%;
@@ -73,24 +76,20 @@
     flex-direction: row;
     width: 100px;
     flex-wrap: nowrap;
-    transition: width 1s;
-
-
-
-
+    transition: width 1s; /* Value of width changes 1 second smoothly */
   }
 
   #menu li:hover{
     width:237px;
     padding-top:25px;
-    font-size: 16px;
+    font-size: 1em;
 
   }
   .nav-text{
     background: #111010;
     margin: 9% 0 0 10px;
     width: auto;
-    font-size: 18px;
+    font-size: 1em;
 
   }
   section{
@@ -101,12 +100,10 @@
    height:80px;
    background-size:70px 50px;
  }
-  .profile h3{
-    padding-top: 55px;
-    text-align:center;
-    padding-top: 55px;
+ a h3.git-hub{
+   margin-top:-4%;
+ }
 
-  }
   main{
     margin-top:80px;
     width: 100%;
@@ -115,6 +112,6 @@
   }
 
   .copy-right{
-    margin: 2% 0 2% 0;
+    margin: 2% 0 2% 0; /* it will have 2% margin fro top and bottom side and 0% margin from rigth amd left side */
 
 }

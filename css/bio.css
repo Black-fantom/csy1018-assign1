@@ -1,21 +1,37 @@
-@import "style.css";
-@import "tab.css";
-@import "mobile.css";
+@import "style.css"; /* It improt all function of style.css */
+@import "tab.css"; /* It improt all function of tab.css */
+@import "mobile.css"; /* It improt all function of mobile.css */
 main{
-  height: auto;
+  height: auto; /* height will automatically adjust acording to the height of item inside the main div */
   padding: 1%;
 }
+h3.git-hub{
+ text-align: center; /* Context will start from the center */
+margin-top:-12%; /* Context will appear 85px below from the top */
+
+}
  .image{
-   margin-top: -233px;
+   height: 70%
  }
+.left_part{
+  justify-content: space-between;
+}
+h2.mySite{
+  color:#a9a92f;
+  font-family: 'Sansita', sans-serif;  /* Font type wiil be Sansita Font family  */
+  margin-left: 2%; /* it will have 2% margin from all side */
+  font-size: 1.5em; /* font size will be 1.5em */
+  text-align: left;
+
+}
 .main-text{
   width: 100%;
   font-size: 20px;
   color:#a9a92f;
   text-align: justify;
-  column-count: 2;
-  margin: 1% 0;
-
+  column-count: 2; /* number of column will be 2 */
+  margin: 1% 0; /* it will have 1% margin from top and bottom side and 0% margin from left and right side */
+  font-family: 'Old Standard TT', serif; /* Font type wiil be Old Standard TT Font family  */
 }
 .main-text p{
   padding: 0px;
@@ -26,9 +42,7 @@ main{
   width:100%;
   height:52%;
   display: flex;
-  flex-direction: column;
-
-
+  flex-direction: column; /* flex item are display in column */
 }
 h2{
   text-align: center;
@@ -36,13 +50,16 @@ h2{
   padding: 0px;
   margin:2px;
   color: #a9a92f;
-  text-shadow: 1px -2px 8px black, 0px 0px 8px
+  text-shadow:1px -2px 15px black, 0px 0px 3px;
+  font-family: 'Revalia', cursive; /* Font type wiil be Revalia Font family  */
+  font-size: 2em; /* font size will bw 2em */
 }
+
 
 #animation-img{
   width: 28%;
   height: 255px;
-  animation: slider 5s infinite;
+  animation: slider 5s infinite; /* animation name will be slider, animatation duration will be 5 second and it will repeat for infinte time */
   transition: width 2s,transfrom 5s, border 2s;
   position: relative;
   z-index: 1;
@@ -55,15 +72,15 @@ h2{
 
 }
 
-@keyframes slider {
+@keyframes slider { /* It is a command which create animation in animation-name slider*/
   0%{
     width:0px;
-    opacity: 0;
+    opacity: 0; /* image will not be visible */
 
   }
 33%{
     width:20%;
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* it will rotate 360 degre */
     margin-left: 25%;
 
   }
@@ -81,11 +98,14 @@ h2{
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {  /* if maxim width of the screen  is 768px then it wiil be called and its action are done */
   main{
-    font-size: 18px;
+    font-size: 1em; /* Font size will be 1em */
     padding: 0%;
 
+  }
+  h2{
+    font-size: 1.5em; /* Font size will be 1.5em */
   }
 
   .main-text{
@@ -94,19 +114,19 @@ h2{
     width: auto;
   }
   .left_part{
-    z-index: 10;
+    z-index: 10; /* it will lies 10px above the other div */
   }
 
 
 }
 
-@media  only screen and (max-width:425px){
+@media  only screen and (max-width:425px){ /* if maxim width of the screen  is 425px then it wiil be called and its action are done */
   main{
     padding:0%;
   }
   .main-text{
     width:auto;
-    font-size: 16px;
+    font-size: 1em;
     padding: 2%;
     column-count: 1;
 
@@ -130,7 +150,7 @@ h2{
     padding: 0px;
     margin:2px;
     color: #a9a92f;
-    text-shadow: 1px -2px 8px black, 0px 0px 8px
+    font-size: 1em;
   }
 
   #animation-img{
@@ -154,7 +174,7 @@ h2{
     0%{
       width:0px;
       opacity: 0;
-      transition: translate(10%)
+      transition: translate(10%) /* item will hif 10% from its position */
 
     }
   33%{
@@ -172,7 +192,7 @@ h2{
 
     100%{
       margin-left: 70%;
-      transform: rotate3d(180deg);
+      transform: rotate3d(180deg); /* item will rotate 360 degree in 3D dimension */
       opacity: 0.1;
     }
   }

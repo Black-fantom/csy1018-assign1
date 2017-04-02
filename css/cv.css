@@ -1,25 +1,35 @@
-@import "style.css";
-@import "tab.css";
-@import "mobile.css";
-
+@import "style.css"; /* It improt all function of style.css */
+@import "tab.css"; /* It improt all function of tab.css */
+@import "mobile.css"; /* It improt all function of mobile.css */
 main{
-  height: auto;
+  height: auto; /* height will automatically adjust acording to the height of item inside the main div */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row; /* flec item will display in row */
+  flex-wrap: wrap; /* over flow of flex item will start from another row */
   justify-content: center;
 
 }
-.image{
-  margin-top: -200px;
+.left_part{
+  justify-content: space-between; /* there will be equal space between the flex item */
 }
+
+h3.git-hub{
+ text-align: center; /* Context will start from the center */
+margin-top:-10%; /* Context will appear 85px below from the top */
+
+}
+.image{
+  height: 69%;
+}
+
 
 main h2{
   width: 100%;
-  margin: 2% 0 1% 2%;
+  margin: 2% 0 2% 2%;
   padding: 0px;
-  font-size: 26px;
+  font-size: 1.5em;
   color: #948228;
+  font-family: 'Revalia', cursive;  /* Structure of the the font will the Revalia Font Family */
 }
 .cv{
   background: #111010;
@@ -36,16 +46,19 @@ main h2{
   list-style: none;
   display: flex;
   flex-direction: column;
+  font-family: 'Farsan', cursive;  /* Structure of the the font will the Farsan Font Family */
+  font-size: 1.09em; /* Font size will bev1.09em */
 }
 
 .cv_content ul li{
-  height: auto;
+  height: auto; /* height will automatically adjust acording to the height of item inside the mani div */
 }
 
 .cv_title{
   border-bottom:3px solid black;
   height: 32px;
   transition: background 1s;
+  font-family: 'Courgette', cursive; /* Structure of the the font will the Courgette Font Family */
 }
 
 .cv_title:hover{
@@ -57,13 +70,11 @@ main h2{
   margin: 0px;
 }
 
-@media (max-width:768px) {
-  main{
+@media only screen and (max-width:768px) {  /* if maxim width of the screen  is 768px then it wiil be called and its action are done */
+  main h2{
+    font-size: 1em;
+}
 
-  }
-  h2{
-    font-size: 22px;
-  }
 
   .cv{
     height: auto;
@@ -81,23 +92,25 @@ main h2{
 
 }
 
-@media (max-width:425px) {
+@media (max-width:425px) { /* if maxim width of the screen  is 425px then it wiil be called and its action are done */
   main{
     display: flex;
-    //flex-direction: column;
     padding: 0%;
     width: 100%;
   }
+  main h2{
+    font-size: 1em; /* fotn size will be 1em*/
 
+  }
   .cv{
     width: auto;
     margin: 0% 3% 4% 3%;
-    font-size: 16px;
+    font-size: 0.8em;
 
 
   }
   .cv_content{
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   .cv_content li{

@@ -1,14 +1,14 @@
 @import "style.css"; /* It improt all function of style.css */
-@import "tab.css";
-@import "mobile.css";
+@import "tab.css"; /* It improt all function of tab.css */
+@import "mobile.css"; /* It improt all function of mobile.css */
 .responsive{
-  display: none;
+  display: none; /* it doesn't display responsive div in browser */
 }
 .welcome-text{
-  text-align: justify;
+  text-align: justify; /* Alignment of the text will be justify */
   height: 90px;
-  font-size: 20px;
-  font-style: italic;
+  font-size: 1.2em;
+  font-style: italic; /* Font will appear in italic style */
 }
 .welcome-text h3{
   margin: 9px 0px 4px 0px;
@@ -17,20 +17,20 @@
 }
 .main-text{
   margin:0px;
+  font-family: 'Sansita', sans-serif;  /* Font type wiil be Sansita */
 }
 .personal-item{
   column-count: 2; /* It create 2 column in div */
-  margin: 5% 0 0 0;
+  margin: 5% 0 0 0; /* it will have 5% margin from the top and 0% margin from the other side *//
   width:65%;
-
-
 }
 .p-item{
   padding: 9px 0px 0px 1px;
   margin:1px 0px 0px 0px;
   background:rgba(19, 16, 16, 0.5);
   height:30px;
-  transition: background 2s;
+  transition: background 2s; /* Value of background changes 2 second smothely*/
+  font-family: 'Kelly Slab', cursive;  /* Font type wiil be Kelly Slab */
 }
 .p-item:hover{
   background: black;
@@ -45,17 +45,23 @@ main{
   display: flex;
   flex-direction: column;
   color:#a9a92f;
-
 }
-@media (max-width:768px) {
+h3.git-hub{
+ text-align: center; /* Context will start from the center */
+ margin-top:-38%; /* Context will appear 85px below from the top */
+}
+.image{
+  margin-top: -32%;
+}
+@media (max-width:768px) { /* if maxim width of the screen  is 768px then it wiil be called and its action are done */
   main{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* direction of row will change */
     padding: 0px;
   }
   .text-part{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* flex contain will display in column */
     width: auto;
     margin-left: 14px;
 
@@ -75,22 +81,20 @@ main{
     width:100%;
     box-shadow:1px 4px 10px black;
     border-radius: 50% ; /* It create circular border */
-    //transition: width 1s, height 1s, border 0.5s;
   }
-
-
+  .p-item{
+    font-size: 0.8em; /* Font size will be 0.8em */
+  }
 }
-
-
-@media (max-width:425px) {
+@media (max-width:425px) { /* if maxim width of the screen  is 425px then it wiil be called and its action are done */
   main{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* flex contain will display in column */
     align-items: center;
     font-size: 18px;
   }
   .main-text{
-    font-size: 18px;
+    font-size: 0.8em;
   }
   .responsive{
     display: flex;
@@ -113,7 +117,9 @@ main{
     column-count: 1;
     width: 100%;
     margin-top: 23%;
-    text-align: center;
+    text-align: center; /* Aliginment of text will bw center */
   }
-
+  .f-text{
+    text-align: center; /* Aliginment of text will bw center */
+  }
  }

@@ -1,26 +1,36 @@
 body{
   display: flex;
   flex-direction: row; /*display the content in row */
-  margin: 0;
+  margin: 0; /* margin will be 0 */
   padding: 0;
 
 }
 
 .left_part{
   background: linear-gradient(to bottom, #131212 ,#040404); /*Create gradient effect of two color from top to bottom */
-  width: 25%;
-  //height: 757px;
-  display: flex;
+  width: 25%; /* width will be 25% of the body width */
+  display: flex; /* it create a flex box */
   flex-direction: column; /* Display content in column*/
-  justify-content: space-between;
+  justify-content: space-between; /* there will be equal space between the flex item */
   padding: 0;
   margin: 0;
 
 
 }
+h3.git-hub{
+ text-align: center; /* Context will start from the center */
+ margin-top:-12%; /* Context will appear 85px below from the top */
+ transition:0.5s; /* transiton change the changes vlaue smoothly */
+}
+h3.git-hub:hover{ /* if mouse is point over it following action will perform */
+  color: #b5e600; /* Text color changes to #b5e600 */
+  font-size: 1.4em; /* Font size changes to 1.4em  */
+}
+
+
 
 .profile{
-  width: 100%;
+  width: 100%; /* width wil be 100% of the profile inside the left_part div */
   height: 120px;
   color: white;
   background-image: url(../images/Logo.png); /* Background image will be Logo.png */
@@ -42,15 +52,15 @@ body{
   100%{ background-image: url(../images/Logo.png); } /* After completing 100% of animation-duration time background will change*/
  }
 
- .profile h3{
+  h3.git-hub{
    text-align: center; /* Context will start from the center */
-   padding-top:85px; /* Context will appear 90px below from the top */
-   margin: 0px;
+   margin-top:-26%; /* Context will appear 85px below from the top */
+
  }
 
  .image{
-   padding: 0px 0px 0px 10px;  /* Div content will appear 10px side from the left */
-   margin-top:23%;
+   padding: 0px 0px 0px 10px;  /* Div content will apear 10px side from the left */
+   margin-top:18%; /* image div will appear 18% below the upper div */
    background-attachment: fixed;
 
  }
@@ -59,9 +69,9 @@ body{
  #circular-img{
    height: 300px;
    width:95%;
-   box-shadow:1px 4px 10px black;
+   box-shadow:1px 4px 10px black; /* shadow of Black color will apear  1px,4px from horizontally and vertically respectivly and 10px will be blur */
    border-radius: 50% ; /* It create circular border */
-   transition: width 1s, height 1s, border 0.5s;
+   transition: width 1s, height 1s, border 0.5s; /* Value of width, height and border changes one second and 0.5second respectively */
  }
 
  #circular-img:hover{
@@ -72,67 +82,78 @@ body{
  .image p{ /* It will create changes only p tag which inside of image div */
    font-size: 30px; /* Font size will be 30px */
    font-style: italic; /* Text will appear in italic style */
-   font-family: 'Black Ops One', cursive;
-   color: antiquewhite; /* Color of font will be antiquewhite */
+   font-family: 'Black Ops One', cursive; /* Structure of the the font will the Black Ops One Font Family */
+   color:#948228; /* Color of font will be 948228 like yellow color */
    padding:7px 0px 0px 7px;; /* Content will start 7px from top and left side */
    margin: 0;
  }
  .signature{
    height: 151px;
    background: black;
+   width: auto;
  }
+h2.mySite{
+  color:#a9a92f;
+  font-family: 'Sansita', sans-serif;  /* Structure of the the font will the Sansita Font Family */
+  margin-left: 2%;
+  font-size: 1.5em;
+  width: auto;
+
+}
+.signature img{
+  margin: 1% 0 0 4%; /* ot will have 1% margin from the top and 0% from the right and bottom and 4% from the left */
+  width: auto;
+}
 
 section{
   width: 85%;
 }
+.menu-icon{
+  display: none; /* it will not display anything which is inside of menu-icon div */
 
+}
  .menu-icon img{
    width: 0px;
 
  }
- nav{
+ header{
    height: 120px;
    width:78%;
-   background: rgb(17, 16, 16);
-   position: fixed;
+   background: rgb(17, 16, 16); /* background color will contain 17%,16%,16% red,green and blue respectively */
+   position: fixed; /* position of header div will not change */
    color: yellow;
-   box-shadow: 5px 3px 12px black;
-   z-index: 10;
+   box-shadow: 5px 3px 12px black; /* 5px of horizontal and 3px vertical shadow of black color will form with 121px blur value */
+   z-index: 10; /* it will lies 10px above other div */
 
 
  }
  .back{
-   display: none;
+   display: none; /* it wil not display back div and its content in website */
  }
 
  a{
    text-decoration: none; /* Default color and decration of hyperlink will removed */
    color: #948228;
  }
-
- a:visited a:active{
-    background: red;
-  }
-
  #menu ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     margin:0;
-    justify-content:flex-end ; /* Flex itme will start from the end of that div */
+    justify-content:flex-end ; /* Flex item will start from the end of that div */
     color: #948228;
 
 
   }
  #menu li{
    display: flex;
-   flex-direction: column;
+   flex-direction: column;  /*display the content in row */
    width: 80px;
    height:34px;
    padding:85px 10px 0 0 ; /* It give padding from top, right. bottom and left side respectively */
-   text-align: center;
-   overflow: hidden;
-   transition: padding 1s, linear-gradient 2s;
+   text-align: center; /* All the text inside the li will start fro the center */
+   overflow: hidden; /* The over flow contain will not display */
+   transition: padding 1s, linear-gradient 2s; /* Value of padding and linear gradient chamges smoothly 1 second and 2 second respectively */
 
 
 
@@ -142,12 +163,12 @@ section{
    background: linear-gradient(to top,rgba(45, 39, 5, 0.58),rgba(49, 43, 4, 0.14)); /*background color changes when mouse is pointed over the context */
    font-size: 18px;
    padding:65px 10px 0 0 ;
-   overflow: visible;
+   overflow: visible;  /* The over flow content will be visible */
 
 
  }
 
- nav img  {
+ header img  {
    width: 30px;
    height: 30px;
  }
@@ -158,7 +179,7 @@ section{
  }
 
  .menu-att{
-   display: none;
+   display: none;  /* it wil not display menu-att div and its content in website */
  }
 
  main{
@@ -176,6 +197,7 @@ section{
    align-items: center;
    padding-top: 5px;
    box-shadow: 4px -4px 11px 0px;
+   font-family: 'Sansita', sans-serif; /* Structure of the the font will the Sansita Font Family */
 
  }
  .git-link{
@@ -246,10 +268,10 @@ section{
 
  }
  .fotter-text{
+   font-family: 'Oswald', sans-serif; /* Structure of the the font will the Oswald Font Family */
 
  }
  .social{
-   //background:#0e0e0e;
    margin-top:5px;
    display: flex;
    justify-content: center;
@@ -260,7 +282,13 @@ section{
   width:40px;
   height:40px;
   padding:2px;
+  transition: width 1s, height 0.5s;
+ }
+ .social img:hover{ /* Following action will perfrom if mouse is point over socila div image */
+   width: 30px;
+   height: 30px;
  }
  .copy-right{
-   color: whitesmoke;
+   color: #a9a92f ;
+   font-family: 'Oswald', sans-serif; /* Structure of the the font will the Oswald Font Family */
  }

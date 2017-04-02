@@ -4,7 +4,7 @@
   }
 
   .left_part{
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: flex-start;
     height: 60px;
@@ -16,12 +16,11 @@
    height:80px;
    background-size:60px 40px;
  }
-  .profile h3{
-    padding-top: 40px;
-    text-align:center;
-    font-size: 16px;
-
-
+ .signature{
+   display: none;
+ }
+  a h3.git-hub{
+    margin-top:-11%;
   }
   .image{
     display: none;

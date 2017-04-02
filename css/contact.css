@@ -1,51 +1,71 @@
-@import "style.css";
-@import "tab.css";
-@import "mobile.css";
+@import "style.css"; /* It improt all function of style.css */
+@import "tab.css"; /* It improt all function of tab.css */
+@import "mobile.css"; /* It improt all function of mobile.css */
 
 main{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: auto;
+  height: auto; /* height will automatically adjust acording to the height of item inside the main div */
+}
+h3.git-hub{
+ text-align: center; /* Context will start from the center */
+ margin-top:-12%; /* Context will appear 85px below from the top */
+ transition:0.5s;
+}
+h3.git-hub:hover{ /* if is pointed over it following action will perfrom */
+  color: #b5e600; /* text color changes to #b5e600 */
+  font-size: 1.4em; /* font size change to 1.4em */
 }
 
 .image{
-  margin-top: -150px;
+  height: 62.9%;
+}
+.left_part{
+  justify-content: space-between; /* there will be equal space between the flex item */
 }
 
+
 main h3{
-  margin: 1% 0 0 0;
+  margin: 1% 0 2% 2%; /* it take 1% margin from top side, 0% margin from right and 2% margin from bottom and left side */
   color: #b9b925;
-  font-size: 2em;
-  text-shadow: 1px 1px 20px rgb(255, 212, 0);
+  font-size: 2em; /* Size of font is 2em */
+  text-shadow: 1px 1px 20px black; /* 1px horizontal and vertical shadow of black color will appear in the text with 20px bulr amount */
+  font-family: 'Revalia', cursive;  /* Structure of the the font will the Revalia Font Family */
+
+}
+
+form{
+  width: auto; /* width automatically adjust acording to the width of item inside the Form */
 }
 
 fieldset{
-  border: 2px solid black;
-  box-shadow: inset -2px 1px 20px 8px black;
+  border: 2px solid black; /* it will create 2px solid boreder around filedset of black color */
+  box-shadow: inset -2px 1px 20px 8px black; /* it will create shadow inside the fliedset */
 
 }
 
 .contactFrm{
-  width: 95%;
-  color: #b9b925;
-  margin-bottom: 2%;
+  color: #b9b925; /* color of text is grennish yellow */
+  margin: 2% 0 2% 1%; /* it take  2% margin from top and bottom and 0% from right and 1% from left */
+  display: flex;
+  flex-direction: row; /* Flex item will display in row */
+  justify-content: space-between; /* it create equall space between the flex item */
 }
 
 .fname{
   width:43.26%;
   height: 30px;
-  padding:1%;
+  padding:1%; /* inside content start from 1% away from all side */
 }
 
 .lname{
   width:43.26%;
   height: 30px;
-  padding:1%;
+  padding:1%; /* inside content start from 1% away from all side */
 }
 .flName{
   display: flex;
-  justify-content:space-between;
+  justify-content:space-between; /* it create equall space between the flex item */
   width: 100%;
 }
 
@@ -53,69 +73,66 @@ fieldset{
   width:97.3%;
   height: 30px;
   padding: 1%;
-  margin-top: 1%;
+  margin-top: 1%; /* it take 1% margin from top side */
 }
 
 input{
   background: rgba(0, 0, 0, 0.38);
-  border: 2px solid #948228;
+  border: 2px solid #948228; /* it create a border of yellow of 2px solid line */
   color: wheat;
-  outline: none;
-  transition: box-shadow 0.8s, background 1s;
+  outline: none; /* it will not show the default outline of input tag */
+  transition: box-shadow 0.8s, background 1s; /* it change vaue of box shadow by 0.8s and background by 1s */
 
 }
 
-input:focus{
-  box-shadow: inset 1px 1px 19px 3px black;
-  background: rgba(49, 6, 6, 0.53);
-  border: 2px solid #000000;
-  color: antiquewhite;
+input:focus{ /* if it is clicked following action will perform */
+  box-shadow: inset 1px 1px 19px 3px black; /* it create shadow inside the box */
+  background: rgba(49, 6, 6, 0.53); /* background color changes to dark red */
+  border: 2px solid #000000; /* border color chages to black */
+  color: antiquewhite; /* text color changes to white */
 }
 
 input[type=date]{
-  margin-top: 1%;
+  margin-top: 1%; /* it take 1% margin from the top side */
 }
 
 .label{
-
   display: flex;
-  justify-content: space-between;
-  margin-top: 1%;
+  justify-content: space-between;  /* it create equall space between the flex item */
+  margin-top: 1%; /* it take 1% margin from the top side */
 }
 
 .Lcontent{
   width: 77%;
-  padding-left:2%;
-
-
+  padding-left:2%;  /* it create 2% space around the content from the left */
 }
 
 input[type=checkbox]{
-  margin-left: 1%;
+  margin-left: 1%; /* it create 1% space around the content from the left */
 }
 
 textarea{
-  margin-top: 1%;
-  resize: none;
-  padding: 1%;
+  width:97%;
+  margin-top: 1%; /* it 1% margin from the top */
+  resize: none; /* it will not allow user to resize the text box */
+  padding: 1%; /* it create 1% space around the contet from the all side */
   background: #131310;
   border: 2px solid #948228;
-  transition: box-shadow 0.8s, background 1s;
+  transition: box-shadow 0.8s, background 1s; /* it changes the value of box shadow by 0.8s and back ground by 1s*/
 }
 textarea:focus{
-  box-shadow: inset 1px 1px 19px 3px black;
-  background: rgba(49, 6, 6, 0.53);
-  border: 2px solid #000000;
-  outline: none;
+  box-shadow: inset 1px 1px 19px 3px black;  /* if it is clicked following action will perform */
+  background: rgba(49, 6, 6, 0.53); /* background color changes to dark red *//
+  border: 2px solid #000000; /* border color changes to black */
+  outline: none; /* it will not show the default outline of textarea tag */
   color: antiquewhite;
 }
 
 input[type=submit], input[type=reset]{
   width:20%;
   height: 34px;
-  cursor: pointer;
-  transition: 0.5s;
-
+  cursor: pointer; /* mouse pointer will show if ponted over it */
+  transition: 0.5s; /* all changing value changes by 0.5s */
 }
 
 input[type=submit]:hover, input[type=reset]:hover{
@@ -128,12 +145,71 @@ input[type=submit]:hover, input[type=reset]:hover{
 legend{
   border: 2px solid black;
   background: black;
+  color: #948228;
 
 }
+.social-contact{
+  margin: 1% 1% 0 0;
+  height: auto;
+  width: 28%;
+}
+.scTitle{
+  background: black;
+  text-align: center;
+  font-size: 1.5em;
+  height: 9%;
+  padding-top: 1%;
+  font-family: 'Revalia', cursive;  /* Font type wiil be Revaila Font family  */
 
-/*input[type=s]*/
+}
+.scImg{
+  width: auto;
+  padding:2% 0 0 4%;
+  height: 20%;
+  background: #0a0909;
 
-@media (max-width:768px) {
+}
+.scImg img{
+  width:40px;
+  height:40px;
+  padding:2px;
+  transition:1s;
+}
+.scImg img:hover{
+  width:30px;
+  height:30px;
+  padding:5px;
+}
+
+
+@media (max-width:768px) {  /* if maxim width of the screen  is 768px then it wiil be called and its action are done */
+  .contactFrm{
+    flex-direction: column;
+    margin: 1%;
+  }
+  .social-contact{
+    width:100%;
+
+  }
+  .scTitle{
+    font-size: 1em;
+    text-align:left;
+    padding: 1% 0 0 1%;
+    height: 30px;
+
+
+  }
+  .scImg{
+      height: 10%;
+      padding:1% 0 0 2%;
+  }
+  .scImg img{
+     width:25px;
+     height:25px;
+  }
+  main h3{
+    font-size: 1.5em;
+  }
   .flName{
     flex-direction: column;
 
@@ -154,7 +230,11 @@ legend{
 
 }
 
-@media (max-width:425px) {
+@media (max-width:425px) { /* if maxim width of the screen  is 425px then it wiil be called and its action are done */
+
+  main h3{
+    font-size: 1em;
+  }
   .label{
     flex-direction: column;
   }
@@ -164,6 +244,7 @@ legend{
   }
 
   .contactFrm{
+    flex-direction: column;
     font-size: 0.8em;
     text-align: justify;
     margin-bottom: 4%;
@@ -177,6 +258,9 @@ legend{
     height: 34px;
     cursor: pointer;
     margin-top: 1%;
+  }
+  input[type=submit]{
+    margin-top: -3%;
   }
 
 }

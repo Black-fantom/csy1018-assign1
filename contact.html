@@ -2,39 +2,40 @@
 <!-- Badal Shrestha
     UN ID= 17421494
 -->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html> <!-- html open -->
+  <head> <!-- head open -->
+    <meta charset="utf-8"> <!-- meta charset define the character encoding of the HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- it detect at what width the web page is displaying, helps in creating responsive site -->
     <title>Contact</title>
-    <link rel="shortcut icon " href="images/Contact.png">
+    <link rel="icon " href="images/Contact.png">
     <link rel="stylesheet" href="css/contact.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">  <!-- Link to google font of Black Ops One font family -->
-  </head> <!-- Link to google font of Black Ops One font family -->
-
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet"> <!-- Link to google font of Black Ops One font family -->
+    <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet"> <!-- Link to google font of Revalia font family -->
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> <!-- Link to google font of Sansita font family -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!-- Link to google font of Oswald Font Family -->
+  </head> <!-- head close -->
   <body> <!-- body begin-->
-    <div class="left_part">
-      <article class="profile">
-        <div class="menu-icon">
-          <a href="#menu"><img src="images/menuicon.png" alt="menu"></a>
-        </div>
-        <a  href="index.html">
-          <h3>My Protfolio</h3>
-       </a> <!-- Contain link to index.html-->
-      </article>
-      <article class="image">
-        <a href="images/Badal1.jpg"><img id ="circular-img"src="images/Badal1.jpg" alt="sorry image not found"> </a> <!-- Display "sorry image not found" if badal1.jpg is not found -->
+    <div class="left_part"> <!-- div tag create an section of given class name -->
+      <a href="index.html">
+        <aside class="profile"> <!-- asside tag create an section of given class name -->
+        </aside></a>
+          <div class="menu-icon">
+              <a href="#menu"><img src="images/menuicon.png" alt="menu"></a><!-- link to menu div within the index.html -->
+          </div>
+            <a  href="https://black-fantom.github.io/csy1018-assign1/index.html">
+              <h3 class="git-hub">Badal-Shrestha</h3>
+            </a> <!-- Contain link to git hub live site-->
+      <aside class="image">
+        <a href="images/Badal1.jpg"><img id ="circular-img" src="images/Badal1.jpg" alt="Badal Shrestha"> </a> <!-- Display "Badal Shrestha" if badal1.jpg is not found -->
         <p>Badal Shrestha</p>
-
-      </article>
-      <article class="signature">
-
-
-      </article>
-     </div>
-    <section>
-      <nav id="menu">
+      </aside>
+      <aside class="signature">
+        <h2 class="mySite">This is my Site</h2>
+        <img src="images/signature.png" alt="signature">  <!-- signature.png image will be added to this section -->
+      </aside>
+    </div>
+    <section> <!--Section begin -->
+      <header id="menu"> <!-- header begin -->
         <div class="back-icon">
           <a href="#"><img class="back" src="images/back.png" alt="back"></a>
           <h4 class="menu-att">Menu</h4>
@@ -43,75 +44,54 @@
         <ul>
           <li><a href="index.html"><img src="images/Home.png" alt="Home"><p class="nav-text">Home</p></a></li>  <!-- Contain link to index.html-->
           <li><a href="bio.html"><img src="images/Bio.png" alt="Bio"><p class="nav-text">Bio</p></a></li> <!-- Contain link to bio.html-->
-          <li><a href="cv.html"><img src="images/Cv.png" alt=""><p class="nav-text">CV</p></a></li> <!-- Contain link to cv.html-->
-          <li><a href="contact.html"><img src="images/Contact.png" alt=""><p class="nav-text">Contact</p></a></li> <!-- Contain link to contact.html-->
+          <li><a href="cv.html"><img src="images/Cv.png" alt="Cv"><p class="nav-text">CV</p></a></li> <!-- Contain link to cv.html-->
+          <li><a href="contact.html"><img src="images/Contact.png" alt="Contact"><p class="nav-text">Contact</p></a></li> <!-- Contain link to contact.html-->
         </ul>
-      </nav>
-
-      <main>
+      </header> <!-- header terminate -->
+      <main> <!-- main begin -->
         <h3>Connect with Me</h3>
         <div class="contactFrm">
-          <form class="" action="contact.html" method="post">
+          <form class="" action="contact.html" method="post"> <!-- from tag create an platfrom so that we can use the element from and metod post does not show submited form data in the page address  -->
             <fieldset>
-              <legend>Contact Form</legend>
+              <legend>Contact Form </legend> <!-- legend tag create a caption for the fieldset -->
               <div class="flName">
-                <input type="text" class="fname" name="Fname" value="" placeholder="First Name" required="">
-                <input type="text" class="lname" name="Lname" value="" placeholder="Last Name" required=" ">
-
+                <input type="text" class="fname" name="Fname" value="" placeholder="First Name" required=""> <!-- input type=text tag  create an text box from which user can input, required tag would not alowed to send empty  and placeholder tag shows the text if the text box is empty and unclicked-->
+                <input type="text" class="lname" name="Lname" value="" placeholder="Last Name" required="">
               </div>
-
-              <input type="email" class="E_ph"name="email" value="" placeholder="Email address"required="">
-              <input type="number" class="E_ph" name="Phone number" value="" placeholder="Phone Number" required="">
+              <input type="email" class="E_ph" name="email" value="" placeholder="Email address" required="">  <!-- input type=email tag  create an text box from which user can input and check email format and placeholder tag shows the text if the text box is empty and unclicked-->
+              <input type="number" class="E_ph" name="Phone number" value="" placeholder="Phone Number" > <!-- input type== number tag create text box which on;y accept nummeric value -->
               <input type="text" class="E_ph" name="address" value="" placeholder="Address">
               <div class="label">
-                Date of Birth
+                <label> Gender</label> <!-- label tag give label to input -->
                 <div class="Lcontent">
-                  <input type="date" name="" value="" placeholder="Date of Birth" required="">
-
-                </div>
-
-              </div>
-              <div class="label">
-                <label for="Gender"> Gender</label>
-                <div class="Lcontent">
-                  <input type="radio" name="gender" value="Male" checked="">Male
-                  <input type="radio" name="gender" value="Female" checked=""> Female
+                  <input type="radio" name="gender" value="Male" checked="">Male <!-- type radio allow to select only one option -->
+                  <input type="radio" name="gender" value="Female" checked=""> Female <!-- type radio allow to select only one option -->
                 </div>
               </div>
-
-
              <div class="label">
-               <label for="ocupassion">Who are you?</label>
+               <label>Who are you?</label> <!-- label tage create a label -->
                <div class="Lcontent">
-                 <select class="ocupassion" name="ocupassion">
-                   <option value="">Student</option>
+                 <select class="ocupassion" name="ocupassion"> <!-- select tag allow to select one option from the given option -->
+                   <option value="">Student</option> <!-- option tag create an option -->
                    <option value="">Business Man</option>
                    <option value="">Worker</option>
                    <option value="">Learner</option>
                 </select>
-
                </div>
-
              </div>
-
-
-
               <div class="label">
-                <label for="intrest">Intrest</label>
+                <label>Intrest</label>
                 <div class="Lcontent">
-                  <input type="checkbox" name="Programming" value="Programming">Programming
+                  <input type="checkbox" name="Programming" value="Programming">Programming <!-- type checkbox allow to select 0 or more option of certain number of choice -->
                   <input type="checkbox" name="designing " value="designing "> Designing
                   <input type="checkbox" name="Web" value="Web devlopmemt"> Web development <br>
                   <input type="checkbox" name="Software development" value="Software development">Software development
                   <input type="checkbox" name="Android " value="Android ">Android
                   <input type="checkbox" name="Ethical Hacking" value="Ethical Hacking">Ethical Hacking <br>
-
                 </div>
-
               </div>
-
               <div class="label">
-                <label for="Skill">Skill</label>
+                <label>Skill</label>
                 <div class="Lcontent">
                   <input type="checkbox" name="Java" value="Java">Java
                   <input type="checkbox" name="javascript" value="javascript">Javascript
@@ -119,50 +99,44 @@
                   <input type="checkbox" name="Python" value="Python">Python
                   <input type="checkBox" name="C" value="C">C Programming
                   <input type="checkbox" name="Rubi" value="Rubi">Rubi <br>
-
                 </div>
               </div>
-              <textarea name="Message" rows="8" cols="75" placeholder="Your message here">
-
+              <textarea name="Message" rows="8" cols="75" placeholder="Your message here"> <!-- textarea creat an text box of given specific rows and column -->
               </textarea> <br>
-
-
-
-
-              <input type="reset" name="Reset" value="Reset"> &nbsp;
-              <input type="submit" name="Submit" value="Submit">
-
-
-
-            </fieldset>
-          </form>
-
+              <input type="reset" name="Reset" value="Reset"> &nbsp; <!-- type reset tag delete all the content written in the form -->
+              <input type="submit" name="Submit" value="Submit"> <!-- type submit tag send the data of from to the specific location -->
+            </fieldset> <!-- fieldset terminate -->
+          </form> <!-- form terminate -->
+          <div class="social-contact">
+            <aside class="scTitle">
+              Follow me on.
+            </aside>
+            <aside class="scImg">
+              <a href="https://www.facebook.com/badal.shrestha.54"><img src="images/facebook.png" alt="Facebook"></a> <!-- Link to my facebook profile -->
+              <a href="https://plus.google.com/u/0/104719396813517746412"><img src="images/gmail.png" alt="Gmail"></a> <!-- link to my google profile-->
+              <a href="https://github.com/Black-fantom"><img src="images/github.png" alt="Github"></a> <!-- link to git hub repository -->
+            </aside>
+          </div>
         </div>
-
-      </main>
-      <footer>
-        <div class="git-link"><a href="https://github.com/Badal-shrestha">Badal-Shrestha.github.io</a>
+      </main> <!-- main terminate -->
+      <footer> <!-- footer open -->
+        <div class="git-link"><a href="https://github.com/Black-fantom">Badal-Shrestha.github.io</a> <!-- it contain link of git hub repository -->
         </div>
         <div class="contact">
           <p class="f-text">9800000000</p>
         </div>
         <div class="fotter-text">
           <p class="f-text">Gamer, Hacker and Coder is full at your service you can follow me on this link...</p>
-          <article class="social"> <!-- Social class begin -->
-            <a href="https://www.facebook.com/badal.shrestha.54"><img src="images/facebook.png" alt="sorry image not found"></a>
-            <a href="https://plus.google.com/u/0/104719396813517746412"><img src="images/gmail.png" alt="sorry image not found"></a>
-
-          </article>
-
+          <aside class="social"> <!-- Social class begin -->
+            <a href="https://www.facebook.com/badal.shrestha.54"><img src="images/facebook.png" alt="facebook"></a> <!-- Link to my facebook profile -->
+            <a href="https://plus.google.com/u/0/104719396813517746412"><img src="images/gmail.png" alt="gmail"></a>
+            <a href="https://github.com/Black-fantom"><img src="images/github.png" alt="Github"></a> <!-- link to git hub repository -->
+          </aside>
         </div>
         <div class="copy-right">
           @badal 2017 :This is not for copy.
         </div>
-      </footer>
-    </section>
-
-
-
-    </div>
+      </footer> <!--footer terminate -->
+    </section> <!-- section terminate -->
   </body> <!-- body termination -->
-</html>
+</html> <!-- html closed -->
