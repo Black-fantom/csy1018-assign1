@@ -21,7 +21,7 @@
 }
 .personal-item{
   column-count: 2; /* It create 2 column in div */
-  margin: 5% 0 0 0; /* it will have 5% margin from the top and 0% margin from the other side *//
+  margin: 5% 0 0 0; /* it will have 5% margin from the top and 0% margin from the other side */
   width:65%;
 }
 .p-item{
