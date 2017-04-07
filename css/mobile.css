@@ -1,4 +1,10 @@
-@media  (max-width:425px){
+/*
+      Badal Shrestha
+      UN ID= 17421494
+
+*/
+
+@media  (max-width:425px){ /* if maxim width of the screen  is 425px then it wiil be called and its action are done */
   body{
     flex-direction: column;
   }
@@ -114,6 +120,7 @@
   }
   .f-text{
     padding: 2px;
+    text-align: center;
   }
   .copy-right{
     margin: 3% 0 2% 0;

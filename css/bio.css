@@ -1,3 +1,9 @@
+/*
+      Badal Shrestha
+      UN ID= 17421494
+
+*/
+
 @import "style.css"; /* It improt all function of style.css */
 @import "tab.css"; /* It improt all function of tab.css */
 @import "mobile.css"; /* It improt all function of mobile.css */
@@ -32,7 +38,7 @@ h2.mySite{
   font-family: 'Old Standard TT', serif; /* Font type wiil be Old Standard TT Font family  */
 }
 .main-text p{
-  padding: 0px;
+  padding: 2%;
   margin: 0px;
 }
 
@@ -46,7 +52,7 @@ h2{
   text-align: center;
   width: 100%;
   padding: 0px;
-  margin:2px;
+  margin:29px 0 6px 0;
   color: #a9a92f;
   text-shadow:1px -2px 15px black, 0px 0px 3px;
   font-family: 'Revalia', cursive; /* Font type wiil be Revalia Font family  */
@@ -80,18 +86,19 @@ h2{
     width:20%;
     transform: rotate(360deg); /* it will rotate 360 degre */
     margin-left: 25%;
+    opacity: 0.5;
 
   }
 
   66%{
     margin-left: 50%;
-    transform: scale3d(20deg);
+    transform: scale(0.8);
     opacity: 1;
   }
 
   100%{
     margin-left: 70%;
-    transform: rotate3d(180deg);
+    transform: scale(1);
     opacity: 0.1;
   }
 }
@@ -164,29 +171,5 @@ h2{
     height: 136px;
   }
 
-  @keyframes slider {
-    0%{
-      width:0px;
-      opacity: 0;
-      transition: translate(10%) /* item will hif 10% from its position */
-    }
-  33%{
-      width:20%;
-      margin-left: 25%;
-      opacity: 0.5
 
-    }
-
-    66%{
-      margin-left: 50%;
-      transform: scale3d(20deg);
-      opacity: 1;
-    }
-
-    100%{
-      margin-left: 70%;
-      transform: rotate3d(180deg); /* item will rotate 360 degree in 3D dimension */
-      opacity: 0.1;
-    }
-  }
 }
